@@ -59,7 +59,7 @@ class Capitals extends Component {
             </select>
             <p className="question">is capital of which country?</p>
           </div>
-          <p className="country">{country}</p>
+          <p className="country">{filteredData[0].country}</p>
         </div>
       </div>
     )
