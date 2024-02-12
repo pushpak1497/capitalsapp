@@ -39,10 +39,7 @@ class Capitals extends Component {
 
   render() {
     const {activeCapitalId} = this.state
-    const activeCountryAndCapital = countryAndCapitalsList.find(
-      eachCapital => eachCapital.id === activeCapitalId,
-    )
-    const {country} = activeCountryAndCapital
+    const filteredData=countryAndCapitalsList.filter(each=>each.id===activeCapitalId)
 
     return (
       <div className="app-container">
